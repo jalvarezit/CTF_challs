@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+
+.white-content {
+  background: #e4e4e4;
+}
+
+.black-content textarea {
+  color: #e4e4e4 !important;
+}
+.black-content div.MuiPaper-root{
+  background-color: #525f7f;
+  color: #1e1e2f !important;
+}

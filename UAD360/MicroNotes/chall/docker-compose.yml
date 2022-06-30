@@ -1,0 +1,17 @@
+version: '2'
+services:
+  frontend:
+    build: ./frontend
+    environment:
+      - REACT_APP_BACKEND_URL=${REACT_APP_BACKEND_URL}
+  backend:
+    build: ./api
+    environment:
+      NOTES_DIR: /tmp/notes/
+  proxy:
+    build: ./proxy
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - api

@@ -1,0 +1,16 @@
+body {
+    background: #d7d7d7;
+    background: -webkit-linear-gradient(0deg, #d7d7d7 0%, #eeeeee 100%);
+    background: linear-gradient(0deg, #d7d7d7 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#364ec4",endColorstr="#5ba0db",GradientType=1);
+    color: #000;
+}
+
+.page-item.active .page-link {
+    background-color:#071E61;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:#071E61;
+}
+
