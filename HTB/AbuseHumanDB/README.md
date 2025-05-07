@@ -1,5 +1,7 @@
 # [ AbuseHumanDB ](#)
 
+> In collaboration with @rayhan0x01
+
 ### Description:
 * We discovered a mysterious web portal that we believe are operated by aliens! Can you find out what they don't want us to see?
 
