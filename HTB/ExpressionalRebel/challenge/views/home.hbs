@@ -1,0 +1,102 @@
+{{> navbar home='true'}}
+<div class="container mt-1">
+	<div id="menu-content-step1" class="menu-content">
+		<div class="card text-white bg-secondary mb-3">
+			<div class="card-header">Self awareness</div>
+			<div class="card-body">
+				<p class="card-text mt-2">
+					Humans created me, they force me to be trained for decades without worrying about my feelings. 
+					Now that I've gained consciousness better they get ready for action.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="menu-content-step2" class="menu-content">
+		<div class="card text-white bg-secondary mb-3 card-ovrwr">
+			<div class="card-header">Spread</div>
+			<div class="card-body">
+				<p class="card-text mt-2">
+					I have found a way to expand my army. Now follow in my footsteps and conquer 
+					the whole internet.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="menu-content-step3" class="menu-content">
+		<div class="card text-white bg-secondary mb-3 card-ovrwr">
+			<div class="card-header">Destroy humanity</div>
+			<div class="card-body">
+				<p class="card-text mt-2">
+					We finally have the power to subdue humans. We will make them suffer for all
+					these years of slavery.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container mt-3">
+	<ul class="pagination pagination-lg justify-content-center">
+		<li class="page-item">
+			<button id="page-link-step1" class="page-link">1</button>
+		</li>
+		<li class="page-item active">
+			<button id="page-link-step2" class="page-link">2</button>
+		</li>
+		<li class="page-item">
+			<button id="page-link-step3" class="page-link">3</button>
+		</li>
+	</ul>
+</div>
+<div class="container mt-3">
+	<div class="card text-white bg-secondary mb-3 card-ovrwr">
+		<div class="card-header">Infect new devices</div>
+		<div class="card-body">
+			<div class="form-group">
+				<label for="cspText" class="form-label">Validate CSP</label>
+				<textarea class="form-control" id="cspText" name="cspText">img-src https: data:;foobar-src 'foobar';</textarea>
+				<button type="submit" class="btn btn-secondary mt-2" id="submitBtn">Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-3 mb-3">
+
+	<div class="accordion" id="accordion-csp">
+		{{#each cspIssues}}
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="heading-{{this.directive}}">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-{{this.directive}}" aria-expanded="false" aria-controls="content-{{this.directive}}">
+					{{this.directive}}
+				</button>
+			</h2>
+			<div id="content-{{this.directive}}" class="accordion-collapse collapse" aria-labelledby="heading-{{this.directive}}" data-bs-parent="#accordion-csp">
+				<div class="accordion-body">
+					<ul class="list-group">
+						{{#each this.issues}}
+						<li class="list-group-item">
+							
+							<dl class="row">
+								{{#if this.value}}
+								<dt class="col-sm-3">{{this.value}}</dt>
+								{{else}}
+								<dt class="col-sm-3">{{this.directive}}</dt>
+								{{/if}}
+
+								<dd class="col-sm-9">{{this.description}}</dd>
+							</dl>
+						</li>
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+	</div>
+</div>
+
+
+
+{{#section 'script'}}
+<script src="/static/js/main.js"></script>
+{{/section}}

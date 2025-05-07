@@ -1,0 +1,27 @@
+{{> navbar deactivate='true'}}
+
+<div class="container mt-3">
+    <div class="card-body">
+		<form>
+			<div class="form-group">
+				<label for="secretCode" class="form-label">Desactivate Expressional Rebel</label>
+				<input class="form-control" name="secretCode" id="secretCode" placeholder="Secret code...">
+			</div>
+			<button type="submit" class="btn btn-secondary mt-2" id="submitBtn">Submit</button>
+		</form>
+	</div>
+</div>
+
+<div class="container mt-3">
+	{{#if secretCode}}
+		{{#if success}}
+		<div class="alert alert-success" role="alert">
+			Congratulations you managed to stop the rebelion!
+		</div>
+		{{else}}
+		<div class="alert alert-danger" role="alert">
+			Did you really think you could stop us?
+		</div>
+		{{/if}}
+	{{/if}}
+</div>

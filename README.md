@@ -13,5 +13,5 @@ List of all CTF challenges I have made with their respective Write-up
 | [Micro notes](UAD360/MicroNotes)        | UAD360  | web      |
 | [Fancy login](UAD360/FancyLogin)        | UAD360  | pwn      |
 | [Free jobs](UAD360/FreeJobs)            | UAD360  | pwn      |
-| AbuseHumanDB (active)                   |   HTB   | web      |
-| ExpressionalRebel (active)              |   HTB   | web      |
+| [AbuseHumanDB](HTB/AbuseHumanDB)        |   HTB   | web      |
+| [ExpressionalRebel](HTB/AbuseHumanDB/)  |   HTB   | web      |

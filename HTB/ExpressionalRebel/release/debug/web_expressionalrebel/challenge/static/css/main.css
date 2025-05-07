@@ -1,0 +1,15 @@
+body {
+  background: rgb(54,78,196);
+  background: -moz-radial-gradient(circle, rgba(54,78,196,1) 0%, rgba(68,90,170,1) 54%, rgba(89,112,171,1) 74%, rgba(91,160,219,1) 91%);
+  background: -webkit-radial-gradient(circle, rgba(54,78,196,1) 0%, rgba(68,90,170,1) 54%, rgba(89,112,171,1) 74%, rgba(91,160,219,1) 91%);
+  background: radial-gradient(circle, rgba(54,78,196,1) 0%, rgba(68,90,170,1) 54%, rgba(89,112,171,1) 74%, rgba(91,160,219,1) 91%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#364ec4",endColorstr="#5ba0db",GradientType=1);
+}
+
+.page-item.active .page-link {
+  background-color:#071E61;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color:#071E61;
+}
